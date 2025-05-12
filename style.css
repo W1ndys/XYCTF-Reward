@@ -99,7 +99,69 @@ button:hover {
     text-decoration: underline;
 }
 
-
 .hidden {
     display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    textarea {
+        font-size: 0.95em;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    #imagesContainer {
+        gap: 10px;
+    }
+
+    .result-image img {
+        max-width: 150px; /* Adjust image size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+        margin: 10px; /* Add some margin on very small screens */
+    }
+
+     h1 {
+        font-size: 1.5em;
+    }
+
+    textarea {
+        font-size: 0.9em;
+    }
+
+     button {
+        font-size: 0.95em;
+    }
+
+     #imagesContainer {
+        justify-content: center; /* Ensure images are centered */
+    }
+
+    .result-image {
+        padding: 8px;
+    }
+
+    .result-image img {
+        max-width: 100%; /* Allow image to take full width if needed */
+    }
+
+    footer p {
+        font-size: 0.8em;
+    }
 } 
